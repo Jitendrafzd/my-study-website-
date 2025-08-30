@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Study Website</title>
+<meta name="description" content="Learn faster, stay motivated, and study smarter with video lessons, practice questions, and college credit courses.">
+<meta name="keywords" content="Study, Education, Courses, Test Prep, College Credit, Online Learning">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<header>
+    <div class="logo">📚 My Study Website</div>
+    <nav>
+        <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#testprep">Test Prep</a></li>
+            <li><a href="#college">College Credit</a></li>
+            <li><a href="#contact">Login</a></li>
+        </ul>
+    </nav>
+    <button id="themeToggle">🌙</button>
+</header>
+
+<!-- Hero Section -->
+<section class="hero fade-in">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+        <h1>Learn faster. Stay motivated. Study smarter.</h1>
+        <p>Master new concepts with video lessons, practice questions, and step-by-step explanations.</p>
+        <a href="#courses" class="btn">Get Started</a>
+    </div>
+    <div class="hero-video">
+        <video id="heroVideo" muted loop playsinline preload="metadata">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <button class="play-btn" id="playBtn">▶ Play Video</button>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="section fade-in">
+    <h2>Popular Courses by Subject</h2>
+    <div class="cards">
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">➗</div><h3>Math 101</h3></div><div class="card-back"><p>Learn algebra, geometry, and calculus basics.</p></div></div></div>
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">🧬</div><h3>Biology 101</h3></div><div class="card-back"><p>Explore cells, genetics, and ecosystems.</p></div></div></div>
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">💻</div><h3>Computer Science 102</h3></div><div class="card-back"><p>Learn programming, algorithms, and logic.</p></div></div></div>
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">📖</div><h3>English 101</h3></div><div class="card-back"><p>Improve reading, writing, and communication skills.</p></div></div></div>
+    </div>
+    <a href="#" class="btn explore-btn">Explore More Courses</a>
+</section>
+
+<!-- Test Prep Section -->
+<section id="testprep" class="section gray fade-in">
+    <h2>Ace Your Test Prep</h2>
+    <p>Prep for exams with custom study guides, practice tests, and video lessons.</p>
+    <div class="cards">
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">📚</div><h3>CLEP Exams</h3></div><div class="card-back"><p>Earn college credit fast.</p></div></div></div>
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">🎓</div><h3>GED Prep</h3></div><div class="card-back"><p>Pass the GED test confidently.</p></div></div></div>
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">📝</div><h3>HSPT Practice</h3></div><div class="card-back"><p>Prepare for high school placement tests.</p></div></div></div>
+    </div>
+    <a href="#" class="btn explore-btn">Explore More Test Prep</a>
+</section>
+
+<!-- College Credit Section -->
+<section id="college" class="section fade-in">
+    <h2>Earn College Credit</h2>
+    <p>Save time and money on over 200 courses.</p>
+    <div class="cards">
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">🌐</div><h3>Online Courses</h3></div><div class="card-back"><p>Flexible, self-paced courses.</p></div></div></div>
+        <div class="card"><div class="card-inner"><div class="card-front"><div class="icon animate-icon">🔗</div><h3>Transfer Credits</h3></div><div class="card-back"><p>Accelerate your degree program.</p></div></div></div>
+    </div>
+    <a href="#" class="btn explore-btn">Explore More College Courses</a>
+</section>
+
+<!-- Testimonials -->
+<section class="section gray fade-in">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial active"><p>"Study.com allowed me to complete courses quickly!"</p><span>- Aimee K.</span></div>
+        <div class="testimonial"><p>"I passed four CLEPs and saved time on college classes."</p><span>- Lisbeth M.</span></div>
+        <div class="testimonial"><p>"The video lessons helped me master concepts fast."</p><span>- John W.</span></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>© 2025 My Study Website. All rights reserved.</p>
+</footer>
+
+<!-- Video Modal -->
+<div id="videoModal" class="modal">
+    <span class="close">&times;</span>
+    <video controls id="modalVideo">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- Back to Top Button -->
+<button id="backToTop">↑ Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>
